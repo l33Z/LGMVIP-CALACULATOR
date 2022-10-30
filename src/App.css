@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background: linear-gradient(
+    176deg,
+    rgb(9, 17, 21) 50%,
+    rgb(17, 31, 46) 100%
+  );
+  min-height: 100vh;
+}
+
+.calculator {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  background: rgb(29, 30, 36);
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 32px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.292);
+}
+
+.calculator th,
+.calculator td {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  color: white;
+  background-color: #54c4f833;
+  font-size: 25px;
+  user-select: none;
+  transition: all 0.3s;
+}
+
+.inputVal {
+  background-color: none;
+}
+
+th:hover:not(.specialTD),
+td:hover {
+  background-color: #54c4f8;
+}
